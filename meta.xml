@@ -1,0 +1,24 @@
+<meta>
+    <info author="xman40100" version="1.0.0" name="native_phonecalls" description="A resource mimicks a dialogue system like in singleplayer." type="resource" />
+
+    <script src="server.lua" type="server" />
+    <script src="client.lua" type="client" />
+    <script src="test-server.lua" type="server" />
+
+    <!-- Settings used by the resource, which you can customize -->
+    <settings>
+        <setting name="call_timeout" value="15" accept="integer" friendlyname="NativePhoneCalls - Phone call timeout" desc="The amount of time in which the player's phone will be ringing until the phone call times out. Default: 15 seconds." />
+
+        <setting name="call_answerkey" value="tab" accept="string" friendlyname="NativePhoneCalls - Phone call answer key." desc="The key that allows players to answer a phone call. Default: TAB." />
+    </settings>
+
+    <!-- Exported functions in order to use the phone call API. -->
+    <export function="createPhoneCall" type="server" />
+    <export function="startClientPhoneCall" type="server" />
+    <!-- <export function="exampleExport1" type="server" />
+    <export function="exampleExport2" type="client" />
+    <export function="exampleExport3" type="shared" /> -->
+
+
+    <min_mta_version server="1.5.2-9.07903" client="1.5.2-9.07903" />
+</meta>

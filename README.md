@@ -63,3 +63,8 @@ You can use the following events to add more functionality:
 * `onNewPhoneIteration(current, currentIndex)`: This event is called when the phone call advances a new index in the dialogue. The parameters return the current dialogue and the current dialogue index. The source element is the player.
 * `onClientPhoneCallRequest(dialogueTable, timeout, key)`: This event is called when the server requests the client to create a new phone call. Internally, it calls the method createPhoneCall in the client, and the parameters specify the dialogue table, timeout setting and key to answer setting. The source is the resourceRoot element.
 * `startPhoneCallRequest()`: This event is called when the server requests the client to start the phone call that is currently loaded. The source element is the resourceRoot element.
+
+## Settings
+You can modify the following settings:
+* `call_timeout`: This setting controls how much time (in seconds) the player has to respond a phone call. By default it's 15 seconds.
+* `call_answerkey`: This setting controls the string key that is needed to answer the phone call. By default it's binded to TAB.
